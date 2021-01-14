@@ -31,10 +31,11 @@ get_header();
 			</div>
 	      <div class="container">
 	        <div class="row">
-	          <div class="col-md-8 ftco-animate">
-	          	<div class="content-single">
+                <div class="col-md-8 ftco-animate">
+	          	  <div class="entry-content">
 		            <h2 class="mb-3"><?php echo get_post_meta(get_the_ID(), 'Header_single', true);?></h2>
 		            	<?php the_content();?>
+                  </div>
 		            <div class="tag-widget post-tag-container mb-5 mt-5">
 		              <div class="tagcloud">
 		                <a href="#" class="tag-cloud-link">Life</a>
@@ -49,7 +50,6 @@ get_header();
 		            	}else {
 		            		get_template_part('template-parts/block-author');
 		            	} ?>
-	            </div>
 	          </div> <!-- .col-md-8 -->
 	          <?php get_sidebar();?>
 	        </div>
