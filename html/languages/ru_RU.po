@@ -1,0 +1,334 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sv-kupe\n"
+"POT-Creation-Date: 2021-01-10 14:46+0300\n"
+"PO-Revision-Date: 2021-01-13 23:32+0300\n"
+"Last-Translator: \n"
+"Language-Team: atlas&Comp\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ../web/docker/sv/html\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config/metabox.php:6
+msgid "Project cost"
+msgstr "Cтоимость проекта"
+
+#: config/metabox.php:14
+msgid "Cash"
+msgstr "Цена"
+
+#: config/metabox.php:15
+msgid "Furniture price, USD"
+msgstr "Цена мебели, USD"
+
+#: config/metabox.php:16
+msgid "Project cost at the time of installation, USD"
+msgstr "Стоимость проекта на момент монтажа, USD"
+
+#: config/metabox.php:25
+msgid "Description Page (H1)"
+msgstr "Описание страницы (H1)"
+
+#: config/metabox.php:33
+msgid "Description H1"
+msgstr "Описание (тег H1)"
+
+#: config/metabox.php:34
+msgid "Tag H1"
+msgstr "Тег (H1)"
+
+#: config/metabox.php:35
+msgid "Add text for tag H1"
+msgstr "Текст для тега H1"
+
+#: config/metabox.php:43
+msgid "Name for post"
+msgstr "Название поста"
+
+#: config/metabox.php:51 config/metabox.php:52
+msgid "Header for post"
+msgstr "Заголовок проекта"
+
+#: config/metabox.php:53
+msgid "Add header for post"
+msgstr "Добавить заголовок"
+
+#: footer.php:40 front-page.php:472
+msgid "Not found news..."
+msgstr "Новостей не найдено ..."
+
+#: front-page.php:122
+msgid "Not found catalog projects..."
+msgstr "Каталог проектов не найден ..."
+
+#: front-page.php:167
+msgid "Not found last projects..."
+msgstr "Последние выполненные проекты не найдены..."
+
+#: functions.php:81
+msgid "Main Menu"
+msgstr "Главное меню"
+
+#: functions.php:82
+msgid "Footer Menu"
+msgstr "Меню в футере"
+
+#: functions.php:83
+msgid "Sidebar Menu"
+msgstr "Меню сайдбара"
+
+#: functions.php:104
+msgid "Sidebar-right-at"
+msgstr "Правый сайдбар"
+
+#: functions.php:105
+msgid "Sidebar for your boss widgets"
+msgstr "Боковая панель для виджетов вашего босса"
+
+#: includes/breadcrumbs.php:12 includes/breadcrumbs.php:36
+#: includes/breadcrumbs.php:38 includes/breadcrumbs.php:44
+#: includes/breadcrumbs.php:54 includes/breadcrumbs.php:64
+#: includes/breadcrumbs.php:69 includes/breadcrumbs.php:145
+msgid "name_home_page"
+msgstr "Главная страница"
+
+#: includes/breadcrumbs.php:70
+msgid "Catalog"
+msgstr "Каталог"
+
+#: includes/breadcrumbs.php:71 search.php:11
+msgid "Search"
+msgstr "Поиск"
+
+#: includes/custom-page-contacts.php:7
+msgid "Additional site parameters (contact information)"
+msgstr "Дополнительные параметры сайта (контактная информация)"
+
+#: includes/custom-page-contacts.php:8
+msgid "Contacts"
+msgstr "Контакты"
+
+#: includes/custom-page-contacts.php:47
+msgid "Setting up contact information"
+msgstr "Настройка контактных данных"
+
+#: includes/custom-page-contacts.php:50
+msgid "Mobile phone number 1"
+msgstr "Номер мобильного телефона №1"
+
+#: includes/custom-page-contacts.php:51
+msgid "Mobile phone number 2"
+msgstr "Номер мобильного телефона №2"
+
+#: includes/custom-page-contacts.php:52
+msgid "City phone number"
+msgstr "Номер городского телефона"
+
+#: includes/custom-page-contacts.php:53
+msgid "Email address"
+msgstr "Email адрес"
+
+#: includes/custom-page-contacts.php:54
+msgid "Company address"
+msgstr "Адрес фирмы"
+
+#: includes/custom-page-contacts.php:55
+msgid "Нow to go to the company"
+msgstr "Уточнения адреса фирмы"
+
+#: includes/custom-page-contacts.php:56
+msgid "Working hours"
+msgstr "Время работы"
+
+#: includes/custom-page-contacts.php:57
+msgid "Working day"
+msgstr "Рабочие дни"
+
+#: includes/custom-page-contacts.php:58
+msgid "Consultation time"
+msgstr "Время консультации"
+
+#: includes/custom-page-contacts.php:59
+msgid "Сompany website"
+msgstr "Сайт фирмы"
+
+#: includes/custom-page-contacts.php:60
+msgid "about_footer"
+msgstr "о нас в футере"
+
+#: includes/custom-page-contacts.php:63
+msgid "instagram_link"
+msgstr "Instagram link"
+
+#: includes/custom-page-contacts.php:64
+msgid "vk_link"
+msgstr "Вконтакте link"
+
+#: includes/custom-page-contacts.php:65
+msgid "telegram_link"
+msgstr "Telegram link"
+
+#: includes/custom-page-contacts.php:69
+msgid "Block of basic settings for the site"
+msgstr "Блок базовых настроек для сайта"
+
+#: includes/custom-type-post-slug-rewrite.php:8
+#: includes/custom-type-post-slug-rewrite.php:9 includes/custom-type-post.php:8
+#: includes/custom-type-post.php:9
+msgid "Projects Mebel"
+msgstr "Проекты мебели"
+
+#: includes/custom-type-post-slug-rewrite.php:10
+#: includes/custom-type-post.php:10
+msgid "Project Mebel"
+msgstr "Проект мебели"
+
+#: includes/custom-type-post-slug-rewrite.php:11
+#: includes/custom-type-post.php:11
+msgid "Add Project"
+msgstr "Добавить проект"
+
+#: includes/custom-type-post-slug-rewrite.php:12
+#: includes/custom-type-post.php:12
+msgid "Add new project"
+msgstr "Добавить новый проект"
+
+#: includes/custom-type-post-slug-rewrite.php:13
+#: includes/custom-type-post.php:13
+msgid "Edit project"
+msgstr "Изменить проект"
+
+#: includes/custom-type-post-slug-rewrite.php:14
+#: includes/custom-type-post.php:14
+msgid "New project mebel"
+msgstr "Новый проект мебели"
+
+#: includes/custom-type-post-slug-rewrite.php:15
+#: includes/custom-type-post.php:15
+msgid "View project"
+msgstr "Просмотреть проект"
+
+#: includes/custom-type-post-slug-rewrite.php:16
+#: includes/custom-type-post.php:16
+msgid "Search projects"
+msgstr "Поиск проектов"
+
+#: includes/custom-type-post-slug-rewrite.php:17
+#: includes/custom-type-post-slug-rewrite.php:18
+#: includes/custom-type-post.php:17 includes/custom-type-post.php:18
+msgid "Projects not found"
+msgstr "Проекты не найдены"
+
+#: includes/custom-type-post-slug-rewrite.php:44
+#: includes/custom-type-post.php:45
+msgid "Types projects"
+msgstr "Категории проектов"
+
+#: includes/custom-type-post-slug-rewrite.php:45
+#: includes/custom-type-post.php:46
+msgid "Categories"
+msgstr "Категории"
+
+#: includes/custom-type-post-slug-rewrite.php:46
+#: includes/custom-type-post.php:47
+msgid "Types Mebel"
+msgstr "Категории мебели"
+
+#: includes/custom-type-post-slug-rewrite.php:47
+#: includes/custom-type-post.php:48
+msgid "Search types"
+msgstr "Поиск категорий"
+
+#: includes/custom-type-post-slug-rewrite.php:48
+#: includes/custom-type-post.php:49
+msgid "All types mebel"
+msgstr "Все категории мебели"
+
+#: includes/custom-type-post-slug-rewrite.php:49
+#: includes/custom-type-post-slug-rewrite.php:50
+#: includes/custom-type-post.php:50 includes/custom-type-post.php:51
+msgid "Parent type"
+msgstr "Родительская категория"
+
+#: includes/custom-type-post-slug-rewrite.php:51
+#: includes/custom-type-post.php:52
+msgid "Parent type mebel"
+msgstr "Родительская категория мебели"
+
+#: includes/custom-type-post-slug-rewrite.php:52
+#: includes/custom-type-post.php:53
+msgid "Update type"
+msgstr "Обновить категорию"
+
+#: includes/custom-type-post-slug-rewrite.php:53
+#: includes/custom-type-post.php:54
+msgid "Add new type mebel"
+msgstr "Добавить новый тип мебели"
+
+#: includes/custom-type-post-slug-rewrite.php:54
+#: includes/custom-type-post.php:55
+msgid "Name new type mebel"
+msgstr "Название нового типа мебели"
+
+#: includes/custom-type-post-slug-rewrite.php:146
+#: includes/custom-type-post.php:111
+msgid "Not set"
+msgstr ""
+
+#: includes/mail-smtp.php:11
+msgid "The e-mail address for the mail is not specified"
+msgstr "Адрес электронной почты  не указан"
+
+#: includes/mail-smtp.php:14
+msgid "Error. Try again later.."
+msgstr "Ошибка. Повторите попытку позже.."
+
+#: includes/mail-smtp.php:67
+msgid "The message is sent. Please Wait"
+msgstr "Сообщение отправлено. пожалуйста подождите"
+
+#: includes/mail-smtp.php:69
+msgid "Error"
+msgstr "Ошибка"
+
+#: search.php:28
+msgid "Search by"
+msgstr "Поиск по"
+
+#: search.php:74
+msgid "Search not found. Try changing your search query"
+msgstr "Поиск не найден. Попробуйте изменить свой поисковый запрос"
+
+#: searchform.php:6
+msgid "Search..."
+msgstr "Поиск ..."
+
+#: single-projects_mebel.php:132
+msgid "Not found other projects..."
+msgstr "Других проектов не нашел..."
+
+#: taxonomy.php:72
+msgid "There are no projects in the selected section"
+msgstr "В выбранном разделе нет проектов"
+
+#: 404.php:15
+msgid "404 Error"
+msgstr "404 Ошибка"
+
+#: 404.php:16
+msgid "Page not Found"
+msgstr "Страница не найдена"
+
+#: breadcrumbs.php:65
+msgid "404 Error: Page not Found"
+msgstr "404 ошибка: Страница не найдена"
+
+#: category.php:74
+msgid "There are no post in the selected category"
+msgstr "У выбранной категории нет записей"

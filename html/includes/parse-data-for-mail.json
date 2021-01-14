@@ -1,0 +1,28 @@
+[
+    {
+      "id": "callback-form",
+      "fields": {
+        "name": "Имя",
+        "phone": "Номер телефона"
+      }
+    },
+    {
+      "id": "feedback-form",
+      "fields": {
+        "name": "Имя",
+        "email": "Email",
+        "message": "Сообщение",
+        "page-title": "Название страницы от куда пришел запрос"
+      }
+    },
+    {
+      "id": "contactPage-form",
+      "fields": {
+        "name": "Имя",
+        "email": "Email",
+        "phone": "Номер телефона",
+        "message": "Сообщение",
+        "page-title": "Название страницы от куда пришел запрос"
+      }
+    }
+]

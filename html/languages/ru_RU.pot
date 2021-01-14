@@ -1,0 +1,336 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: sv-kupe\n"
+"POT-Creation-Date: 2021-01-10 14:18+0300\n"
+"PO-Revision-Date: 2021-01-10 14:19+0300\n"
+"Last-Translator: \n"
+"Language-Team: atlas&Comp\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ../web/docker/sv/html\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config/metabox.php:6
+msgid "Project cost"
+msgstr ""
+
+#: config/metabox.php:14
+msgid "Cash"
+msgstr ""
+
+#: config/metabox.php:15
+msgid "Furniture price, USD"
+msgstr ""
+
+#: config/metabox.php:16
+msgid "Project cost at the time of installation, USD"
+msgstr ""
+
+#: config/metabox.php:25
+msgid "Description Page (H1)"
+msgstr ""
+
+#: config/metabox.php:33
+msgid "Description H1"
+msgstr ""
+
+#: config/metabox.php:34
+msgid "Tag H1"
+msgstr ""
+
+#: config/metabox.php:35
+msgid "Add text for tag H1"
+msgstr ""
+
+#: config/metabox.php:43
+msgid "Name for post"
+msgstr ""
+
+#: config/metabox.php:51 config/metabox.php:52
+msgid "Header for post"
+msgstr ""
+
+#: config/metabox.php:53
+msgid "Add header for post"
+msgstr ""
+
+#: footer.php:40 front-page.php:472
+msgid "Not found news..."
+msgstr ""
+
+#: front-page.php:122
+msgid "Not found catalog projects..."
+msgstr ""
+
+#: front-page.php:167
+msgid "Not found last projects..."
+msgstr ""
+
+#: functions.php:81
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:82
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:83
+msgid "Sidebar Menu"
+msgstr ""
+
+#: functions.php:104
+msgid "Sidebar-right-at"
+msgstr ""
+
+#: functions.php:105
+msgid "Sidebar for your boss widgets"
+msgstr ""
+
+#: includes/breadcrumbs.php:12 includes/breadcrumbs.php:36
+#: includes/breadcrumbs.php:38 includes/breadcrumbs.php:44
+#: includes/breadcrumbs.php:54 includes/breadcrumbs.php:64
+#: includes/breadcrumbs.php:69 includes/breadcrumbs.php:145
+msgid "name_home_page"
+msgstr ""
+
+#: includes/breadcrumbs.php:70
+msgid "Catalog"
+msgstr ""
+
+#: includes/breadcrumbs.php:71 search.php:11
+msgid "Search"
+msgstr ""
+
+#: includes/custom-page-contacts.php:7
+msgid "Additional site parameters (contact information)"
+msgstr ""
+
+#: includes/custom-page-contacts.php:8
+msgid "Contacts"
+msgstr ""
+
+#: includes/custom-page-contacts.php:47
+msgid "Setting up contact information"
+msgstr ""
+
+#: includes/custom-page-contacts.php:50
+msgid "Mobile phone number 1"
+msgstr ""
+
+#: includes/custom-page-contacts.php:51
+msgid "Mobile phone number 2"
+msgstr ""
+
+#: includes/custom-page-contacts.php:52
+msgid "City phone number"
+msgstr ""
+
+#: includes/custom-page-contacts.php:53
+msgid "Email address"
+msgstr ""
+
+#: includes/custom-page-contacts.php:54
+msgid "Company address"
+msgstr ""
+
+#: includes/custom-page-contacts.php:55
+msgid "Нow to go to the company"
+msgstr ""
+
+#: includes/custom-page-contacts.php:56
+msgid "Working hours"
+msgstr ""
+
+#: includes/custom-page-contacts.php:57
+msgid "Working day"
+msgstr ""
+
+#: includes/custom-page-contacts.php:58
+msgid "Consultation time"
+msgstr ""
+
+#: includes/custom-page-contacts.php:59
+msgid "Сompany website"
+msgstr ""
+
+#: includes/custom-page-contacts.php:60
+msgid "about_footer"
+msgstr ""
+
+#: includes/custom-page-contacts.php:63
+msgid "instagram_link"
+msgstr ""
+
+#: includes/custom-page-contacts.php:64
+msgid "vk_link"
+msgstr ""
+
+#: includes/custom-page-contacts.php:65
+msgid "telegram_link"
+msgstr ""
+
+#: includes/custom-page-contacts.php:69
+msgid "Block of basic settings for the site"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:8
+#: includes/custom-type-post-slug-rewrite.php:9 includes/custom-type-post.php:8
+#: includes/custom-type-post.php:9
+msgid "Projects Mebel"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:10
+#: includes/custom-type-post.php:10
+msgid "Project Mebel"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:11
+#: includes/custom-type-post.php:11
+msgid "Add Project"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:12
+#: includes/custom-type-post.php:12
+msgid "Add new project"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:13
+#: includes/custom-type-post.php:13
+msgid "Edit project"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:14
+#: includes/custom-type-post.php:14
+msgid "New project mebel"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:15
+#: includes/custom-type-post.php:15
+msgid "View project"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:16
+#: includes/custom-type-post.php:16
+msgid "Search projects"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:17
+#: includes/custom-type-post-slug-rewrite.php:18
+#: includes/custom-type-post.php:17 includes/custom-type-post.php:18
+msgid "Projects not found"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:44
+#: includes/custom-type-post.php:45
+msgid "Types projects"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:45
+#: includes/custom-type-post.php:46
+msgid "Categories"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:46
+#: includes/custom-type-post.php:47
+msgid "Types Mebel"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:47
+#: includes/custom-type-post.php:48
+msgid "Search types"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:48
+#: includes/custom-type-post.php:49
+msgid "All types mebel"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:49
+#: includes/custom-type-post-slug-rewrite.php:50
+#: includes/custom-type-post.php:50 includes/custom-type-post.php:51
+msgid "Parent type"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:51
+#: includes/custom-type-post.php:52
+msgid "Parent type mebel"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:52
+#: includes/custom-type-post.php:53
+msgid "Update type"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:53
+#: includes/custom-type-post.php:54
+msgid "Add new type mebel"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:54
+#: includes/custom-type-post.php:55
+msgid "Name new type mebel"
+msgstr ""
+
+#: includes/custom-type-post-slug-rewrite.php:146
+#: includes/custom-type-post.php:111
+msgid "Not set"
+msgstr ""
+
+#: includes/mail-smtp.php:11
+msgid "The e-mail address for the mail is not specified"
+msgstr ""
+
+#: includes/mail-smtp.php:14
+msgid "Error. Try again later.."
+msgstr ""
+
+#: includes/mail-smtp.php:67
+msgid "The message is sent. Please Wait"
+msgstr ""
+
+#: includes/mail-smtp.php:69
+msgid "Error"
+msgstr ""
+
+#: search.php:28
+msgid "Search by"
+msgstr ""
+
+#: search.php:74
+msgid "Search not found. Try changing your search query"
+msgstr ""
+
+#: searchform.php:6
+msgid "Search..."
+msgstr ""
+
+#: single-projects_mebel.php:132
+msgid "Not found other projects..."
+msgstr ""
+
+#: taxonomy.php:72
+msgid "There are no projects in the selected section"
+msgstr ""
+
+#: 404.php:15
+msgid "404 Error"
+msgstr ""
+
+#: 404.php:16
+msgid "Page not Found"
+msgstr ""
+
+#: breadcrumbs.php:65
+msgid "404 Error: Page not Found"
+msgstr ""
+
+#: category.php:74
+msgid "There are no post in the selected category"
+msgstr ""
+

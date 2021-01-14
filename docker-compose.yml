@@ -1,0 +1,44 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    container_name: svkupe
+    ports:
+      - 8096:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: svkupe
+    volumes:
+      - ./atl-plugin-widget-catalog/:/var/www/html/wp-content/plugins/atl-plugin-widget-catalog/
+      - ./html/:/var/www/html/wp-content/themes/svkupe/
+      - svkupe:/var/www/html
+    depends_on:
+        - db
+    networks:
+      - project_svkupe
+  db:
+    image: mysql:5.7
+    container_name: mysql_svkupe
+    restart: always
+    environment:
+      MYSQL_DATABASE: svkupe
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db_svkupe:/var/lib/mysql
+    networks:
+      - project_svkupe
+
+networks:
+  project_svkupe:
+    driver: bridge
+
+volumes:
+  svkupe:
+  db_svkupe:
