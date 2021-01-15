@@ -336,9 +336,9 @@ function get_last_blog_posts ($cat = 0, $num=0){
     }
     if(!$num) $num = 3;
         $args =[
-            'post_type'=>'post',
-            'category_name'    => $category,
             'numberposts' => $num,
+            'post_type'=>'post',
+            'category' => $category,
             'orderby'     => 'date',
             'order'       => 'DESC',
         ];
@@ -392,4 +392,11 @@ function get_random_project ($num = 0) {
             ];
               $posts = get_posts($args);
     return $posts;
+}
+
+//Изменить количество выводимых постов  на странице категории blog
+add_action( 'pre_get_posts', 'count_post_blog_category');
+function count_post_blog_category ($query) {
+    if ($query->is_category('blog'))
+        $query->set( 'posts_per_page', 9);
 }
