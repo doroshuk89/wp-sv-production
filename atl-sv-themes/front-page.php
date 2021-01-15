@@ -1,7 +1,6 @@
 <?php
 $contacts = get_option('contacts'); // это массив
 get_header();
-get_last_blog_posts();
 ?>
 <!-- Header Slide Parallax-->
 <section>
@@ -231,7 +230,7 @@ get_last_blog_posts();
         </div>
         <div class="row justify-content-center ftco-animate">
             <p>
-                <a href="#" class="btn btn-primary btn-lg">Подробнее</a>
+                <a href="<?php echo get_uri_for_slug('dopolnitelnye-uslugi');?>" class="btn btn-primary btn-lg">Подробнее</a>
             </p>
         </div>
     </div>
@@ -246,7 +245,7 @@ get_last_blog_posts();
                 <h2 class="mb-4">Мебель в стиле ЛОФТ</h2>
                 <p class="mb-4">Основные материалы дизайна – металл, дерево и стекло.</p>
                 <p>
-                    <a href="#" class="btn btn-primary px-4 py-3">Подробнее</a>
+                    <a href="<?php echo get_uri_for_slug('mebel-v-stile-loft');?>" class="btn btn-primary px-4 py-3">Подробнее</a>
                 </p>
             </div>
         </div>
@@ -428,7 +427,7 @@ get_last_blog_posts();
                 <h2 class="mb-4 h2-small">Искусственный камень</h2>
                 <p class="mb-4">Изделия из искуссвенного камня на кухне и в интерьере</p>
                 <p>
-                    <a href="#" class="btn btn-primary px-4 py-3">Подробнее</a>
+                    <a href="<?php echo get_uri_for_slug('izdeliya-iz-iskussvennogo-kamnya-na-kuhne-i-v-interere');?>" class="btn btn-primary px-4 py-3">Подробнее</a>
                 </p>
             </div>
         </div>

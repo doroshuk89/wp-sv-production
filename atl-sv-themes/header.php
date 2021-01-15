@@ -16,7 +16,7 @@ $contacts = get_option('contacts'); // это массив
 <!--Start nav MENU -->
 <nav  class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="<?php echo get_home_url();?>">
             <img class="img-brand" alt="logo" src="<?php get_url_logo(); ?>">
         </a>
         <a class="navbar-toggler">

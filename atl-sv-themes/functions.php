@@ -398,3 +398,16 @@ function get_random_project ($num = 0) {
               $posts = get_posts($args);
     return $posts;
 }
+
+//Получении ссылки по переданому slug
+function get_uri_for_slug($slug) {
+    if(isset($slug) && !empty($slug)){
+        $post_data = get_page_by_path($slug, OBJECT, 'post');
+    }
+    if($post_data->ID) {
+        return get_permalink($post_data->ID);
+    }else {
+        return get_home_url();
+    }
+}
+
