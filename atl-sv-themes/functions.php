@@ -326,19 +326,24 @@ function get_last_projects ($num = 0) {
     return $posts;
 }
 
-
-//Получение  последних новости
+//Получение  последних новостей
 function get_last_blog_posts ($cat = 0, $num=0){
     if(isset($cat) && !empty($cat)){
-        $category = $cat;
+        $category_slug = $cat;
     }else {
-         $category = 'blog';
+         $category_slug = 'blog';
+    }
+    //Получить id категории
+    if($category = get_category_by_slug($category_slug)) {
+        $category_id =$category->term_id; 
+    }else {
+        $category_id = 0;
     }
     if(!$num) $num = 3;
         $args =[
-            'numberposts' => $num,
             'post_type'=>'post',
-            'category' => $category,
+            'category'    => $category_id,
+            'numberposts' => $num,
             'orderby'     => 'date',
             'order'       => 'DESC',
         ];
@@ -392,11 +397,4 @@ function get_random_project ($num = 0) {
             ];
               $posts = get_posts($args);
     return $posts;
-}
-
-//Изменить количество выводимых постов  на странице категории blog
-add_action( 'pre_get_posts', 'count_post_blog_category');
-function count_post_blog_category ($query) {
-    if ($query->is_category('blog'))
-        $query->set( 'posts_per_page', 9);
 }
