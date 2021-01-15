@@ -24,7 +24,7 @@ $contacts = get_option('contacts'); // это массив
                         </p>
                         <p>
                             <i class="icon-phone-square"></i>
-                            <a href="tel:<?php echo clear_phone(contacts['mobile2']);?>"><?php echo $contacts['mobile2'];?></a>
+                            <a href="tel:<?php echo clear_phone($contacts['mobile2']);?>"><?php echo $contacts['mobile2'];?></a>
                         </p>
                         <p>
                             <i class="icon-phone-square"></i>

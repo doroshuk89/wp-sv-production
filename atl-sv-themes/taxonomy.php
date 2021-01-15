@@ -48,7 +48,7 @@ get_header();
 								</div>
 
 								<div class="col-md-12 cash-s ftco-animate">
-									<p>Цена: <i class="icon-usd"></i>
+									<p>Цена: от <i class="icon-usd"></i>
 										<?php echo get_post_meta(get_the_ID(), 'Cash_cash', true);?>
 									</p>
 								</div>

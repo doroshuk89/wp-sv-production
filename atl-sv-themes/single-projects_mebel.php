@@ -33,12 +33,12 @@ the_post();
                
                       <?php
                         //Get the images ids from the post_metadata
-                        if(function_exists(acf_photo_gallery)) {
+                        if(function_exists('acf_photo_gallery')) {
                             $images = acf_photo_gallery('Gallery', get_the_ID() );
                         }
                                 //Check if return array has anything in it
                                 if(isset($images) && !empty($images)){ ?>
-                                <div class="fotorama p-3" data-allowfullscreen="true" data-nav="thumbs" data-autoplay="true"  data-transition="slide" data-loop="true" data-width="100%" data-minheight="300px">
+                                <div class="fotorama p-3" data-allowfullscreen="true" data-nav="thumbs" data-autoplay="true"  data-transition="slide" data-loop="true" data-width="100%" data-minheight="300px" data-maxheight="500px">
                      <?php 
 
                                     foreach($images as $image){

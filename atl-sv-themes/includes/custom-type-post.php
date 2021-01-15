@@ -94,7 +94,7 @@ switch ( $column_name ) {
 	case 'thumb':
 		if(has_post_thumbnail(get_the_ID())) { ?>
 			<a href="<?php echo get_edit_post_link(); ?>">
-				<?php echo get_the_post_thumbnail(get_the_ID(), array(80,)); ?>
+				<?php echo get_the_post_thumbnail(get_the_ID(), array(60,60)); ?>
 			</a>
 		<?php }
 		break;
