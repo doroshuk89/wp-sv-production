@@ -342,8 +342,8 @@ function get_last_blog_posts ($cat = 0, $num=0){
     if(!$num) $num = 3;
         $args =[
             'post_type'=>'post',
-            'category'    => $category_id,
-            'numberposts' => $num,
+            'category'    => (int)$category_id,
+            'numberposts' => (int)$num,
             'orderby'     => 'date',
             'order'       => 'DESC',
         ];
