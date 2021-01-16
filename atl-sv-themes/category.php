@@ -50,7 +50,7 @@ get_header();
 			           			<div class="col-md-4">
 			           				<div class="post-img">
 				           				<a href="<?php the_permalink();?>">
-				           					<img src="<?php the_post_thumbnail_custom('medium');?>" alt="Миниатюра-<?php echo get_the_title();?>">
+				           					<img src="<?php the_post_thumbnail_custom('medium_large');?>" alt="Миниатюра-<?php echo get_the_title();?>">
 				           				</a>
 			           				</div>
 			           			</div>

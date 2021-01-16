@@ -44,7 +44,7 @@ function request_message_callback () {
              $body .= "<table style='width:600px; border-spacing: 10px; border: 1px solid silver; padding: 10px; font-size:20px;'><tr><td>";
              $body .= "<tr style='height: 150px;'><td valign='top' style='padding:0' bgcolor='#ffffff'>
                 <a href='#'>
-                        <img src='http://p29820n8.beget.tech/loft/img/email-header-loft.jpg' alt='' border='0' style='display: block; border-radius: 4px;' />
+                        <img src=" .site_url('/wp-content/uploads/2021/01/polzovatelskie-razmery-768x270-px.jpeg')." alt='' border='0' style='display: block; border-radius: 4px;' />
                 </a>
                 </td></tr>";
              $body .= "<tr><td ><h3 style='text-align:center; border-bottom: 1px solid silver; color:#d61c22;'>".$title."</h3></td></tr>";
