@@ -145,7 +145,7 @@ get_header();
                                 <div class="product-entry text-center">
                                     <div class="nord">
                                         <a href="<?php the_permalink();?>">
-                                            <img src="<?php the_post_thumbnail_custom('medium');?>" class="img-fluid" alt="Colorlib Template">
+                                            <img src="<?php the_post_thumbnail_custom('medium');?>" class="img-fluid" alt="Миниатюра-<?php echo get_the_title();?>">
                                         </a>
                                     </div>
                                     <div class="text">
@@ -375,7 +375,7 @@ get_header();
             </div>
             <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
                 <div class="staff">
-                    <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person2.jpeg);"></div>
+                    <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person2.jpg);"></div>
                     <div class="info text-center">
                         <h3><a href="teacher-single.html">Дмитрий</a></h3>
 
@@ -390,7 +390,7 @@ get_header();
             </div>
             <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
                 <div class="staff">
-                    <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person1.jpeg);"></div>
+                    <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person3.jpg);"></div>
                     <div class="info text-center">
                         <h3><a href="teacher-single.html">Ольга</a></h3>
 
@@ -402,7 +402,7 @@ get_header();
             </div>
             <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
                 <div class="staff">
-                    <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person4.jpeg);"></div>
+                    <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person4.jpg);"></div>
                     <div class="info text-center">
                         <h3><a href="teacher-single.html">Лариса</a></h3>
                         <div class="text">

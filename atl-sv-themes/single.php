@@ -45,7 +45,7 @@ get_header();
 		              </div>
 		            </div>
 		            <?php
-		            	if(in_category('service')) {
+		            	if(in_category('services')) {
 	  						get_template_part('template-parts/block-feedback-singlePage');
 		            	}else {
 		            		get_template_part('template-parts/block-author');
