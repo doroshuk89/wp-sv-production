@@ -60,7 +60,7 @@ get_header();
 			           				<div class="meta">
 			                  			<div><?php echo get_the_date();?></div>	                  
 			                		</div>
-			                		<p><?php  the_excerpt();?></p>
+			                		<?php  the_excerpt();?>
 			           			</div>
 			           		</div>
 		           		</div>

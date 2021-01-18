@@ -33,7 +33,6 @@ get_header();
 	        <div class="row">
                 <div class="col-md-8 ftco-animate">
 	          	  <div class="entry-content">
-		            <h2 class="mb-3"><?php echo get_post_meta(get_the_ID(), 'Header_single', true);?></h2>
 		            	<?php the_content();?>
                   </div>
 		            <div class="tag-widget post-tag-container mb-5 mt-5">

@@ -83,8 +83,11 @@ $title = wp_get_document_title();
 </footer>
 
 <!--includes Modal Form-->
-<?php get_template_part('template-parts/modal-callbackPhone','',['title' => $title]);?>
-<?php get_template_part('template-parts/modal-feedbackForm','', ['title' => $title]);?>
+<?php if(!is_page('contact')) {
+    get_template_part('template-parts/modal-callbackPhone','',['title' => $title]);
+    get_template_part('template-parts/modal-feedbackForm','', ['title' => $title]);
+}
+?>
 
 <!-- loader -->
 <div id="ftco-loader" class="show fullscreen">

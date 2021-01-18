@@ -263,9 +263,7 @@ get_header();
         <div class="row justify-content-center parent-one">
             <div class="col-md-6  ftco-animate about-jobs text-center">
                 <h3>О нас</h3>
-                <p>
-                	<?php the_content();?>
-                </p>
+                	<?php the_content();?>               
             </div>
 
             <div class="col-md-6  ftco-animate about-jobs text-center">
@@ -459,7 +457,7 @@ get_header();
                                             <div><span><?php echo get_the_date('Y-m-d');?></span></div>
                                         </div>
                                         <h3 class="heading mt-2"><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
-                                        <p><?php the_excerpt();?></p>
+                                        	<?php the_excerpt();?>
                                     </div>
                                 </div>
                             </div>
