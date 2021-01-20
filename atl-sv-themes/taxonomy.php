@@ -48,8 +48,14 @@ get_header();
 								</div>
 
 								<div class="col-md-12 cash-s ftco-animate">
-									<p>Цена: от <i class="icon-usd"></i>
-										<?php echo get_post_meta(get_the_ID(), 'Cash_cash', true);?>
+									<p>Цена: от
+										<?php if(function_exists('convert_currency')) {
+												echo convert_currency(get_post_meta(get_the_ID(), 'Cash_cash', true)); ?>
+												<i class="">BYN</i>
+											<?php }else {
+												echo get_post_meta(get_the_ID(), 'Cash_cash', true); ?>
+												<i class="icon-usd"></i>
+											<?php } ?> 
 									</p>
 								</div>
 

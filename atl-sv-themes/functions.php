@@ -412,3 +412,12 @@ function get_uri_for_slug($slug) {
     }
 }
 
+
+//Временная функция конвертирования в BYN (Беларуссские рубли)
+function convert_currency ($value, $cyrrency = 'USD') {
+    $kurs = 2.6;
+    if($value) {
+        return ceil($value*$kurs);
+    }
+}
+

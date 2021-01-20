@@ -71,9 +71,17 @@ the_post();
                         	</p>
                         </div>
                         <div class="col-md-12 cash-s ftco-animate">
-                            <p>Цена: от <i class="icon-usd"></i>
+                            <div>Цена: от</div>
+                            <p>
                             	<?php echo get_post_meta(get_the_ID(), 'Cash_cash', true);?>
+                                    <i class="">USD</i>
                             </p>
+                            <?php if(function_exists('convert_currency')){ ?>
+                                <p>
+                                    <?php echo convert_currency(get_post_meta(get_the_ID(), 'Cash_cash', true)); ?>
+                                                <i class="">BYN</i>
+                                </p>
+                           <?php } ?>
                         </div>
                         <div class="col-md-12  ftco-animate">
                             <div class="p-3 text-center">
