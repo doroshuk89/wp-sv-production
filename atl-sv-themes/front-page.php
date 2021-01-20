@@ -150,9 +150,15 @@ get_header();
                                     </div>
                                     <div class="text">
                                         <h3><a href="<?php the_permalink();?>"><?php the_title();?></a></h3>
-                                            <span class="price mb-4">
-                                                <i class="icon-usd"></i>
-                                                <?php echo get_post_meta(get_the_ID(), 'Cash_cash', true);?></span>
+                                            <span class="price mb-4">от
+                                                <?php if(function_exists('convert_currency')) {
+                                                    echo convert_currency(get_post_meta(get_the_ID(), 'Cash_cash', true)); ?>
+                                                        <i class="">BYN</i>
+                                                <?php }else {
+                                                    echo get_post_meta(get_the_ID(), 'Cash_cash', true); ?>
+                                                        <i class="icon-usd"></i>
+                                                <?php } ?> 
+                                            </span>
                                         <p><a href="<?php the_permalink();?>" class="btn btn-primary">Подробнее</a></p>
                                     </div>
                                 </div>

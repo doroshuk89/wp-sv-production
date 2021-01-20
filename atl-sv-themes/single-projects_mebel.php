@@ -120,7 +120,15 @@ the_post();
                                         <div class="blog-entry align-self-stretch">
                                                 <a href="<?php the_permalink();?>" class="block-20" style="background-image: url('<?php the_post_thumbnail_custom();?>');"></a>
                                             <div class="col-md-12 cash-s ftco-animate">
-                                                <p>Цена: от <i class="icon-usd"></i> <?php echo get_post_meta(get_the_ID(), 'Cash_cash', true);?></p>
+                                                <p>Цена: от 
+                                                    <?php if(function_exists('convert_currency')) {
+                                                            echo convert_currency(get_post_meta(get_the_ID(), 'Cash_cash', true)); ?>
+                                                                <i class="">BYN</i>
+                                                    <?php }else {
+                                                            echo get_post_meta(get_the_ID(), 'Cash_cash', true); ?>
+                                                                <i class="icon-usd"></i>
+                                                    <?php } ?> 
+                                                </p>
                                             </div>
                                             <div class="text py-4 d-block">
                                                 <div class="meta">
