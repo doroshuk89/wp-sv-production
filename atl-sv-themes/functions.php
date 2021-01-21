@@ -1,16 +1,18 @@
 <?php
-/**
- * Add log ajax errors
- */
+
 define('DIR_THEMES', get_template_directory());
 define('URL_THEMES', get_template_directory_uri());
 define('TYPE_POST', 'projects_mebel');
 define('TAX_MEBEL', 'mebel');
 define('CATALOG', 'catalog');
 
-if( WP_DEBUG && WP_DEBUG_DISPLAY && (defined('DOING_AJAX') && DOING_AJAX) ){
-    @ ini_set( 'display_errors', 1 );
-}
+/**
+ * Add log ajax errors
+ */
+//Отлкючено из-за конфликта с WPvivid
+//if( WP_DEBUG && WP_DEBUG_DISPLAY && (defined('DOING_AJAX') && DOING_AJAX) ){
+//    @ ini_set( 'display_errors', 1 );
+//}
 /**
  * Delete meta data from headers
  */
