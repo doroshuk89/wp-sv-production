@@ -8775,13 +8775,17 @@ textarea.form-control {
   list-style: none;
   padding-left: 0;
  }
-.sidebar-box li a {
+.sidebar-box li a, .sidebar-box li a span {
   transition: all 400ms ease;
+  display: block;
 }
  .sidebar-box ul li a:hover {
    transform: translate(5px, 0);
    color: #ce9c6b;
  }
+.sidebar-box ul li a:hover span{
+  color: #ce9c6b;
+}
   .sidebar-box *:last-child {
     margin-bottom: 0; }
   .sidebar-box h3 {
@@ -9507,8 +9511,8 @@ textarea.form-control {
   margin-bottom: 10px;
 }
 .cash-s p {
-  padding: 5px;
   font-size: 18px;
+  font-style: italic;
   color: #ce9c6b;
   margin-bottom: 0;
 }
