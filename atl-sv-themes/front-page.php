@@ -365,7 +365,7 @@ get_header();
                 <div class="staff">
                     <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person1.jpg);"></div>
                     <div class="info text-center">
-                        <h3><a href="teacher-single.html">Андрей</a></h3>
+                        <h3>Андрей</h3>
 
                         <div class="text">
                             <p>Заказывал прихожую. Приехали сделали замеры предложили много вариантов дали консультацию,
@@ -381,7 +381,7 @@ get_header();
                 <div class="staff">
                     <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person2.jpg);"></div>
                     <div class="info text-center">
-                        <h3><a href="teacher-single.html">Дмитрий</a></h3>
+                        <h3>Дмитрий</h3>
 
                         <div class="text">
                             <p>Заказывал кухню. В этом деле полный дилетант. Все очень хорошо объяснили, показали готовые варианты, предложили большое количество фурнитур.
@@ -396,7 +396,7 @@ get_header();
                 <div class="staff">
                     <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person3.jpg);"></div>
                     <div class="info text-center">
-                        <h3><a href="teacher-single.html">Ольга</a></h3>
+                        <h3>Ольга</h3>
 
                         <div class="text">
                             <p>Спасибо огромное за шикарную тумбу в ванную. Вы действительно профессионалы своего дела. Получилось лучше, чем мечтали.</p>
@@ -408,7 +408,7 @@ get_header();
                 <div class="staff">
                     <div class="img mb-4" style="background-image: url(<?php bloginfo('template_url');?>/assets/img/person4.jpg);"></div>
                     <div class="info text-center">
-                        <h3><a href="teacher-single.html">Лариса</a></h3>
+                        <h3>Лариса</h3>
                         <div class="text">
                             <p>За время существования фирмы обращалась с индивидуальными заказами неоднократно. Заказывала и шкафы, и спальню, и кухню, и мебель в ванную.
                                 Очень профессиональный подход, широкое предложение как дизайнерское, так и ценовое, на любой вкус.
