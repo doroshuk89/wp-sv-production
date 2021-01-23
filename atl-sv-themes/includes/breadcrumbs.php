@@ -153,7 +153,7 @@ function get_top_term( $taxonomy, $post_id = 0 ){
 	$terms = get_the_terms( $post_id, $taxonomy );
 	if( ! $terms || is_wp_error($terms) )
 		return $terms;
-	$next_term;
+	$next_term="";
 	$array_link=[];
 	foreach ($terms as $term) {
 		// найдем ТОП
