@@ -59,16 +59,21 @@ the_post();
             <div class="col-md-3 p-3">
                 <div class="container">
                     <div class="row justify-content-center">
+
                         <div class="col-md-12  ftco-animate text-center">
                             <h4>Краткое описание</h4>
                         </div>
                         <div class="col-md-12 p-3 ftco-animate desc">
                             	<?php the_content();?>
                         </div>
+
                         <div class="col-md-12 pl-3 ftco-animate">
                         	<p>
                         		<span>Дата публикации: <?php the_date();?></span>
                         	</p>
+                        </div>
+                        <div class="col-md-12 m-3 ftco-animate">
+                            <div class="ya-share2" data-curtain data-services="vkontakte,facebook,telegram,twitter,viber,whatsapp,skype,pocket"></div>
                         </div>
                         <div class="col-md-12 cash-s ftco-animate">
                             <div>Цена: от</div>
@@ -88,6 +93,7 @@ the_post();
                                 <a href="#" data-toggle="modal" data-target="#feedBackForm" class="btn btn-primary">Оставить заявку</a>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>

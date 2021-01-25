@@ -39,6 +39,25 @@ add_action( 'wp_enqueue_scripts', 'wpassist_remove_block_library_css' );
 function wpassist_remove_block_library_css(){
     wp_dequeue_style( 'wp-block-library' );
 }
+// Отключаем сам REST API
+//add_filter('rest_enabled', '__return_false');
+// Отключаем фильтры REST API
+//remove_action( 'xmlrpc_rsd_apis', 'rest_output_rsd' );
+//remove_action( 'wp_head', 'rest_output_link_wp_head', 10, 0 );
+//remove_action( 'template_redirect', 'rest_output_link_header', 11, 0 );
+//remove_action( 'auth_cookie_malformed', 'rest_cookie_collect_status' );
+//remove_action( 'auth_cookie_expired', 'rest_cookie_collect_status' );
+//remove_action( 'auth_cookie_bad_username', 'rest_cookie_collect_status' );
+//remove_action( 'auth_cookie_bad_hash', 'rest_cookie_collect_status' );
+//remove_action( 'auth_cookie_valid', 'rest_cookie_collect_status' );
+//remove_filter( 'rest_authentication_errors', 'rest_cookie_check_errors', 100 );
+// Отключаем события REST API
+//remove_action( 'init', 'rest_api_init' );
+//remove_action( 'rest_api_init', 'rest_api_default_filters', 10, 1 );
+//remove_action( 'parse_request', 'rest_api_loaded' );
+// Отключаем Embeds связанные с REST API
+remove_action( 'rest_api_init', 'wp_oembed_register_route');
+remove_filter( 'rest_pre_serve_request', '_oembed_rest_pre_serve_request', 10, 4 );
 
 /* =============================================================================================== */
 
@@ -119,7 +138,6 @@ function register_theme_scripts () {
         wp_register_script('waypoints',     get_template_directory_uri().'/assets/js/jquery.waypoints.min.js', array('jquery'), $theme_version, true);
         wp_register_script('fotorama',     get_template_directory_uri().'/assets/js/fotorama.min.js', array('jquery'), $theme_version, true);
         enqueue_versioned_script('main','/assets/js/main.min.js', array('jquery'));
-        wp_register_script('social_yandex_service', 'https://yastatic.net/share2/share.js', array(), null, true);
         
 
 }
@@ -145,10 +163,6 @@ function includes_scripts () {
     wp_enqueue_script('parallaxie');
     if(is_singular(TYPE_POST)){
          wp_enqueue_script('fotorama');
-         wp_enqueue_script('social_yandex_service');
-    }
-    if(is_single()) {
-         wp_enqueue_script('social_yandex_service'); 
     }
     wp_enqueue_script('main');
     //Передача значений во внешнюю часть сайта для js скрипта
@@ -172,22 +186,7 @@ function includes_styles () {
         wp_enqueue_style('main');
 }
 
-//Добавляем асинхронную загрузку JS в wordpress
-add_filter('script_loader_tag', 'add_async_attribute', 10, 2);
-function add_async_attribute($tag, $handle) {
-   // добавьте дескрипторы (названия) скриптов в массив ниже
-   $scripts_to_async =  [
-                            'social_yandex_service', 
-                        ];
-   
-   foreach($scripts_to_async as $async_script) {
-      if ($async_script === $handle) {
-            return str_replace(' src', ' async src', $tag);
-      }
-   }
-   return $tag;
-}
-//============================================================//
+
 
 
 //Функция получения только ULR логотипа сайта

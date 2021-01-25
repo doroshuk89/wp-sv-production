@@ -35,13 +35,8 @@ get_header();
 	          	  <div class="entry-content">
 		            	<?php the_content();?>
                   </div>
-		            <div class="tag-widget post-tag-container mb-5 mt-5">
-		              <div class="tagcloud">
-		                <a href="#" class="tag-cloud-link">Life</a>
-		                <a href="#" class="tag-cloud-link">Sport</a>
-		                <a href="#" class="tag-cloud-link">Tech</a>
-		                <a href="#" class="tag-cloud-link">Travel</a>
-		              </div>
+		            <div class="tag-widget post-tag-container mb-5 mt-5 ftco-animate">
+                            <div class="ya-share2" data-curtain data-services="vkontakte,facebook,telegram,twitter,viber,whatsapp,skype,pocket"></div>
 		            </div>
 		            <?php
 		            	if(in_category('services')) {
