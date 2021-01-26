@@ -89,7 +89,6 @@
 				$('.number').each(function(){
 					var $this = $(this),
 						num = $this.data('number');
-						console.log(num);
 					$this.animateNumber(
 					  {
 					    number: num,
@@ -397,9 +396,18 @@
 		}, 800);
 		return false;
 	});
+//Плавный переход вниз слайдера
+	$('.scroll_down').on('click', function () {
+		var destination = $('.scroll_down').offset().top;
+		$('html, body').animate({
+			scrollTop: destination + 100
+		}, 600);
+		return false;
+	});
+
 
 	/*Parallax*/
-	if ($(window).width() > 992) {
+	if ($(window).width() > 480) {
 		$(".parallaxie").parallaxie({
 			speed: 0.7,
 			offset: 0,

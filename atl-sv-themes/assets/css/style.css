@@ -9797,3 +9797,24 @@ a img.aligncenter {
   margin: 0;
   padding: 0 4px 5px;
 }
+
+/*Styles for  link bottom in slider header*/
+.link-bottom {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  width: 100%;
+}
+.link-bottom .icon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+.link-bottom .icon i {
+  font-size: 36px;
+  color:#fff;
+}
+/*end style slider header*/
