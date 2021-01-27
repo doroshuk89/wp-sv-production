@@ -2,7 +2,7 @@
 get_header();
 ?>
   <!-- Header Slide Parallax-->
-            <?php get_template_part('template-parts/header-slider','taxonomy');?>
+            <?php get_template_part('template-parts/header-slider','category');?>
     <!-- End Header Slide Parallax -->
 
 	    <section class="ftco-section ftco-degree-bg">
