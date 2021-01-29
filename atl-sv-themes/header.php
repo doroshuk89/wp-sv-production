@@ -10,6 +10,10 @@ $contacts = get_option('contacts'); // это массив
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Jivosite Online chat -->
+		<script src="//code-ya.jivosite.com/widget/9O8GY2AXb0" async></script>
+		<style>.wrap_bc0e {bottom:80px !important;}</style>
+	<!-- end Jivosite -->
     <?php wp_head(); ?>
 </head>
 <body>
