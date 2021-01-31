@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: sv-kupe\n"
-"POT-Creation-Date: 2021-01-10 14:46+0300\n"
-"PO-Revision-Date: 2021-01-13 23:32+0300\n"
+"POT-Creation-Date: 2021-01-31 13:00+0300\n"
+"PO-Revision-Date: 2021-01-31 13:01+0300\n"
 "Last-Translator: \n"
 "Language-Team: atlas&Comp\n"
 "Language: ru\n"
@@ -10,84 +10,45 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.1\n"
-"X-Poedit-Basepath: ../web/docker/sv/html\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: config/metabox.php:6
-msgid "Project cost"
-msgstr "Cтоимость проекта"
+#: category-blog.php:35 category.php:62
+msgid "There are no post in the selected category"
+msgstr "У выбранной категории нет записей"
 
-#: config/metabox.php:14
-msgid "Cash"
-msgstr "Цена"
-
-#: config/metabox.php:15
-msgid "Furniture price, USD"
-msgstr "Цена мебели, USD"
-
-#: config/metabox.php:16
-msgid "Project cost at the time of installation, USD"
-msgstr "Стоимость проекта на момент монтажа, USD"
-
-#: config/metabox.php:25
-msgid "Description Page (H1)"
-msgstr "Описание страницы (H1)"
-
-#: config/metabox.php:33
-msgid "Description H1"
-msgstr "Описание (тег H1)"
-
-#: config/metabox.php:34
-msgid "Tag H1"
-msgstr "Тег (H1)"
-
-#: config/metabox.php:35
-msgid "Add text for tag H1"
-msgstr "Текст для тега H1"
-
-#: config/metabox.php:43
-msgid "Name for post"
-msgstr "Название поста"
-
-#: config/metabox.php:51 config/metabox.php:52
-msgid "Header for post"
-msgstr "Заголовок проекта"
-
-#: config/metabox.php:53
-msgid "Add header for post"
-msgstr "Добавить заголовок"
-
-#: footer.php:40 front-page.php:472
+#: footer.php:41 front-page.php:475
 msgid "Not found news..."
 msgstr "Новостей не найдено ..."
 
-#: front-page.php:122
+#: front-page.php:121
 msgid "Not found catalog projects..."
 msgstr "Каталог проектов не найден ..."
 
-#: front-page.php:167
+#: front-page.php:172
 msgid "Not found last projects..."
 msgstr "Последние выполненные проекты не найдены..."
 
-#: functions.php:81
+#: functions.php:64 functions_old.php:83
 msgid "Main Menu"
 msgstr "Главное меню"
 
-#: functions.php:82
+#: functions.php:65 functions_old.php:84
 msgid "Footer Menu"
 msgstr "Меню в футере"
 
-#: functions.php:83
+#: functions.php:66 functions_old.php:85
 msgid "Sidebar Menu"
 msgstr "Меню сайдбара"
 
-#: functions.php:104
+#: functions.php:88 functions_old.php:107
 msgid "Sidebar-right-at"
 msgstr "Правый сайдбар"
 
-#: functions.php:105
+#: functions.php:89 functions_old.php:108
 msgid "Sidebar for your boss widgets"
 msgstr "Боковая панель для виджетов вашего босса"
 
@@ -102,7 +63,7 @@ msgstr "Главная страница"
 msgid "Catalog"
 msgstr "Каталог"
 
-#: includes/breadcrumbs.php:71 search.php:11
+#: includes/breadcrumbs.php:71 template-parts/header-slider-category.php:12
 msgid "Search"
 msgstr "Поиск"
 
@@ -127,54 +88,62 @@ msgid "Mobile phone number 2"
 msgstr "Номер мобильного телефона №2"
 
 #: includes/custom-page-contacts.php:52
+msgid "Mobile phone number 3"
+msgstr "Номер мобильного телефона №3"
+
+#: includes/custom-page-contacts.php:53
 msgid "City phone number"
 msgstr "Номер городского телефона"
 
-#: includes/custom-page-contacts.php:53
+#: includes/custom-page-contacts.php:54
 msgid "Email address"
 msgstr "Email адрес"
 
-#: includes/custom-page-contacts.php:54
+#: includes/custom-page-contacts.php:55
+msgid "Email address for web forms"
+msgstr "Email адрес для web форм сайта"
+
+#: includes/custom-page-contacts.php:56
 msgid "Company address"
 msgstr "Адрес фирмы"
 
-#: includes/custom-page-contacts.php:55
+#: includes/custom-page-contacts.php:57
 msgid "Нow to go to the company"
 msgstr "Уточнения адреса фирмы"
 
-#: includes/custom-page-contacts.php:56
+#: includes/custom-page-contacts.php:58
 msgid "Working hours"
 msgstr "Время работы"
 
-#: includes/custom-page-contacts.php:57
+#: includes/custom-page-contacts.php:59
 msgid "Working day"
 msgstr "Рабочие дни"
 
-#: includes/custom-page-contacts.php:58
+#: includes/custom-page-contacts.php:60
 msgid "Consultation time"
 msgstr "Время консультации"
 
-#: includes/custom-page-contacts.php:59
+#: includes/custom-page-contacts.php:61
 msgid "Сompany website"
 msgstr "Сайт фирмы"
 
-#: includes/custom-page-contacts.php:60
+#: includes/custom-page-contacts.php:62
 msgid "about_footer"
 msgstr "о нас в футере"
 
-#: includes/custom-page-contacts.php:63
+#: includes/custom-page-contacts.php:65
 msgid "instagram_link"
 msgstr "Instagram link"
 
-#: includes/custom-page-contacts.php:64
+#: includes/custom-page-contacts.php:66
 msgid "vk_link"
 msgstr "Вконтакте link"
 
-#: includes/custom-page-contacts.php:65
+#: includes/custom-page-contacts.php:67
 msgid "telegram_link"
 msgstr "Telegram link"
 
-#: includes/custom-page-contacts.php:69
+#: includes/custom-page-contacts.php:71
 msgid "Block of basic settings for the site"
 msgstr "Блок базовых настроек для сайта"
 
@@ -281,27 +250,27 @@ msgstr "Название нового типа мебели"
 msgid "Not set"
 msgstr ""
 
-#: includes/mail-smtp.php:11
+#: includes/mail-smtp.php:10
 msgid "The e-mail address for the mail is not specified"
 msgstr "Адрес электронной почты  не указан"
 
-#: includes/mail-smtp.php:14
+#: includes/mail-smtp.php:13
 msgid "Error. Try again later.."
 msgstr "Ошибка. Повторите попытку позже.."
 
-#: includes/mail-smtp.php:67
+#: includes/mail-smtp.php:65
 msgid "The message is sent. Please Wait"
 msgstr "Сообщение отправлено. пожалуйста подождите"
 
-#: includes/mail-smtp.php:69
-msgid "Error"
-msgstr "Ошибка"
+#: includes/mail-smtp.php:67
+msgid "Mail transfer error"
+msgstr "Ошибка передачи почты "
 
-#: search.php:28
+#: search.php:16
 msgid "Search by"
 msgstr "Поиск по"
 
-#: search.php:74
+#: search.php:62
 msgid "Search not found. Try changing your search query"
 msgstr "Поиск не найден. Попробуйте изменить свой поисковый запрос"
 
@@ -309,26 +278,55 @@ msgstr "Поиск не найден. Попробуйте изменить св
 msgid "Search..."
 msgstr "Поиск ..."
 
-#: single-projects_mebel.php:132
+#: single-projects_mebel.php:153
 msgid "Not found other projects..."
 msgstr "Других проектов не нашел..."
 
-#: taxonomy.php:72
+#: taxonomy.php:66
 msgid "There are no projects in the selected section"
 msgstr "В выбранном разделе нет проектов"
 
-#: 404.php:15
-msgid "404 Error"
-msgstr "404 Ошибка"
+#~ msgid "Project cost"
+#~ msgstr "Cтоимость проекта"
 
-#: 404.php:16
-msgid "Page not Found"
-msgstr "Страница не найдена"
+#~ msgid "Cash"
+#~ msgstr "Цена"
 
-#: breadcrumbs.php:65
-msgid "404 Error: Page not Found"
-msgstr "404 ошибка: Страница не найдена"
+#~ msgid "Furniture price, USD"
+#~ msgstr "Цена мебели, USD"
 
-#: category.php:74
-msgid "There are no post in the selected category"
-msgstr "У выбранной категории нет записей"
+#~ msgid "Project cost at the time of installation, USD"
+#~ msgstr "Стоимость проекта на момент монтажа, USD"
+
+#~ msgid "Description Page (H1)"
+#~ msgstr "Описание страницы (H1)"
+
+#~ msgid "Description H1"
+#~ msgstr "Описание (тег H1)"
+
+#~ msgid "Tag H1"
+#~ msgstr "Тег (H1)"
+
+#~ msgid "Add text for tag H1"
+#~ msgstr "Текст для тега H1"
+
+#~ msgid "Name for post"
+#~ msgstr "Название поста"
+
+#~ msgid "Header for post"
+#~ msgstr "Заголовок проекта"
+
+#~ msgid "Add header for post"
+#~ msgstr "Добавить заголовок"
+
+#~ msgid "Error"
+#~ msgstr "Ошибка"
+
+#~ msgid "404 Error"
+#~ msgstr "404 Ошибка"
+
+#~ msgid "Page not Found"
+#~ msgstr "Страница не найдена"
+
+#~ msgid "404 Error: Page not Found"
+#~ msgstr "404 ошибка: Страница не найдена"

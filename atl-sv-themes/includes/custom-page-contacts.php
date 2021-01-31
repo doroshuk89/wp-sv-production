@@ -49,8 +49,10 @@ function plugin_settings(){
     // параметры: $id, $title, $callback, $page, $section, $args
     add_settings_field('mobile1', __('Mobile phone number 1', 'svkupe-domain'), 'add_mobile1', 'page-contacts', 'section_id' );
     add_settings_field('mobile2', __('Mobile phone number 2', 'svkupe-domain'), 'add_mobile2', 'page-contacts', 'section_id' );
+    add_settings_field('mobile3', __('Mobile phone number 3', 'svkupe-domain'), 'add_mobile3', 'page-contacts', 'section_id' );
     add_settings_field('phone_city', __('City phone number', 'svkupe-domain'), 'add_phone_city', 'page-contacts', 'section_id' );
     add_settings_field('email', __('Email address', 'svkupe-domain'), 'add_email', 'page-contacts', 'section_id' );
+    add_settings_field('email_webform', __('Email address for web forms', 'svkupe-domain'), 'add_email_webform', 'page-contacts', 'section_id' );
     add_settings_field('address',  __('Company address', 'svkupe-domain'), 'add_address', 'page-contacts', 'section_id' );
     add_settings_field('address_details',  __('Нow to go to the company', 'svkupe-domain'), 'add_address_details', 'page-contacts', 'section_id' );
     add_settings_field('time_work', __('Working hours', 'svkupe-domain'), 'add_timework', 'page-contacts', 'section_id' );
@@ -82,6 +84,14 @@ function add_mobile2(){
     $val = $val ? $val['mobile2'] : null;
     ?>
     <input type="text" name="contacts[mobile2]" value="<?php  esc_attr_e( $val ) ?>" />
+    <?php
+}
+
+function add_mobile3(){
+    $val = get_option('contacts');
+    $val = isset($val['mobile3'])? $val['mobile3'] : null;
+    ?>
+    <input type="text" name="contacts[mobile3]" value="<?php  esc_attr_e( $val ) ?>" />
     <?php
 }
 function add_phone_city(){
@@ -140,6 +150,14 @@ function add_email () {
     $val = $val ? $val['email'] : null;
     ?>
     <input type="text" name="contacts[email]" value="<?php  esc_attr_e( $val ) ?>" />
+    <?php
+}
+
+function add_email_webform () {
+    $val = get_option('contacts');
+    $val = isset($val['email_webform']) ? $val['email_webform'] : null;
+    ?>
+    <input type="email" name="contacts[email_webform]" value="<?php  esc_attr_e( $val ) ?>" />
     <?php
 }
 function add_about () {

@@ -5,8 +5,8 @@ add_action( 'wp_ajax_nopriv_request_message', 'request_message_callback' );
 function request_message_callback () {
 	//Получение email-адрес указанного на странице контактов
     	$contacts = get_option('contacts'); // это массив
-    	$from_email = $contacts['email'];
-    if(!isset($from_email) && empty ($from_email)) {
+    	$from_email = $contacts['email_webform'];
+    if(!isset($from_email) || empty ($from_email)) {
         wp_send_json(['status' => false, 'message' => __('The e-mail address for the mail is not specified','svkupe-domain')]);
     }
 	if(!check_ajax_referer('mail_ajax_nonce','nonce', false)){
@@ -64,7 +64,7 @@ function request_message_callback () {
 	if(wp_mail($from_email, $title,  $body, $headers)){
 			wp_send_json(['status' => true, 'message' => __('The message is sent. Please Wait','svkupe-domain')]);
 	}else {
-			wp_send_json(['status' => true, 'message' => __('Error','svkupe-domain')]);
+			wp_send_json(['status' => false, 'message' => __('Mail transfer error','svkupe-domain')]);
 	};
 }
 
