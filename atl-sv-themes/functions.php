@@ -189,6 +189,22 @@ function add_async_attribute($tag, $handle) {
 }
 //============================================================//
 
+/**Вывод значений ключевых слов*/
+add_action( 'wp_head', 'art_add_field_keyword', 1 );
+function art_add_field_keyword() {
+
+    global $post;
+    $keyword_single_field = get_post_meta( $post->ID, 'art_meta_keywords', true );
+    if ( $keyword_single_field ) {
+        echo '<meta name="keywords" content="' . esc_html( $keyword_single_field ) . '" />';
+    }
+    $term_id           = get_queried_object();
+    $keyword_cat_field = get_term_meta( $term_id->term_id, 'art_meta_keywords', true );
+    if ( $keyword_cat_field ) {
+        echo '<meta name="keywords" content="' . esc_html( $keyword_cat_field ) . '" />';
+    }
+
+}
 
 //Функция получения только ULR логотипа сайта
 function get_url_logo () {
