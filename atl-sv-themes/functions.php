@@ -206,6 +206,21 @@ function art_add_field_keyword() {
 
 }
 
+//Добавляем категорию проектов Каталог по умолчанию к проектом где не указана категория
+add_action( 'save_post', 'set_default_mytax_term', 100, 2 );
+function set_default_mytax_term( $post_id, $post ) {
+  if ( 'publish' === $post->post_status && $post->post_type === 'projects_mebel' ) {
+
+    $terms = wp_get_post_terms( $post_id, 'mebel' );
+
+    if ( empty( $terms ) ) {
+      wp_set_object_terms( $post_id, 'catalog', 'mebel' );
+    }
+
+  }
+}
+
+
 //Функция получения только ULR логотипа сайта
 function get_url_logo () {
     $custom_logo__url = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
@@ -439,4 +454,6 @@ function convert_currency ($value, $cyrrency = 'USD') {
         return ceil($value*$kurs);
     }
 }
+
+
 
