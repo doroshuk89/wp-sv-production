@@ -76,17 +76,25 @@ the_post();
                             <div class="ya-share2" data-curtain data-services="vkontakte,facebook,telegram,twitter,viber,whatsapp,skype,pocket"></div>
                         </div>
                         <div class="col-md-12 cash-s ftco-animate">
-                            <div>Цена: от</div>
-                            <p>
-                            	<?php echo get_post_meta(get_the_ID(), 'Cash_cash', true);?>
-                                    <i class="">USD</i>
-                            </p>
-                            <?php if(function_exists('convert_currency')){ ?>
+                          <?php 
+                            $cash = get_post_meta(get_the_ID(), 'Cash_cash', true);
+                            if($cash){ ?>
+                                <div>Цена: от</div>
                                 <p>
-                                    <?php echo convert_currency(get_post_meta(get_the_ID(), 'Cash_cash', true)); ?>
-                                                <i class="">BYN</i>
+                                    <?php echo $cash;?>
+                                        <i class="">USD</i>
                                 </p>
-                           <?php } ?>
+                                <?php if(function_exists('convert_currency')) { ?>
+                                <p>
+                                    <?php echo convert_currency($cash); ?>
+                                        <i class="">BYN</i>
+                                </p>
+                                <?php }
+                            }else { ?>
+                                <p>
+                                    Уточняйте стоимость
+                                </p>
+                            <?php } ?>
                         </div>
                         <div class="col-md-12  ftco-animate">
                             <div class="p-3 text-center">
